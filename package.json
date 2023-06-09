@@ -1,0 +1,28 @@
+{
+  "name": "cbusServer3",
+  "version": "0.0.3",
+  "private": true,
+  "author": "Nigel Phillips",
+  "scripts": {
+    "start": "node server --",
+    "dev": "nodemon server",
+    "test": ""
+  },
+  "dependencies": {
+    "@serialport/parser-readline": "^10.3.0",
+    "cbuslibrary": "^2.4.1",
+    "chai": "^4.3.6",
+    "jsonfile": "^6.1.0",
+    "serialport": "^10.4.0",
+    "socket.io": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "config/nodeConfig.json",
+      "config/*"
+    ]
+  }
+}
